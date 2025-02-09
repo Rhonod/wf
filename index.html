@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ace - My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #000;
+            color: #fff;
+            transition: background 0.3s, color 0.3s;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #111;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+        h1, h2 { color: #fff; }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            margin: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .btn img {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+        }
+        .discord-btn {
+            background: #5865F2;
+            color: white;
+        }
+        .github-btn {
+            background: #333;
+            color: white;
+        }
+        .hire-btn {
+            background: #ff4500;
+            color: white;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+            opacity: 0.8;
+        }
+        .toggle-container {
+            margin-top: 20px;
+        }
+        .settings-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .settings-btn img {
+            width: 20px;
+            height: 20px;
+        }
+        .settings-btn:hover {
+            background: #45a049;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Ace</h1>
+        <p>I create websites, develop JavaScript projects, and design cool stuff! Currently, I have not made a project yet, but stay tuned!</p>
+        <a href="https://discord.gg/YBXR2dKFkq" class="btn discord-btn">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord"> Join My Discord
+        </a>
+        <a href="https://github.com/" class="btn github-btn">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png" alt="GitHub"> Visit My GitHub
+        </a>
+        
+        <h2>Hire Me</h2>
+        <p>I offer both free and paid plans:</p>
+        <p><strong>Free Plan:</strong> You must shout out my servers.</p>
+        <p><strong>Paid Plan:</strong> 700 Robux per week.</p>
+        <p><em>Why is the price high?</em> Sometimes hosting can break, and I may need to pay for server costs to keep everything running smoothly.</p>
+        <a href="#" class="btn hire-btn">Hire Me</a>
+        
+        <div class="toggle-container">
+            <button onclick="toggleTheme()" class="btn">Toggle Dark/Light Mode</button>
+        </div>
+    </div>
+
+    <button class="settings-btn">
+        <img src="https://cdn-icons-png.flaticon.com/512/1250/1250676.png" alt="Settings">
+    </button>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            if (body.style.backgroundColor === 'white') {
+                body.style.backgroundColor = '#000';
+                body.style.color = '#fff';
+            } else {
+                body.style.backgroundColor = 'white';
+                body.style.color = '#000';
+            }
+        }
+    </script>
+</body>
+</html>
